@@ -24,7 +24,7 @@ const cooldown = check => {
 			$("#cooldown").innerText = "0:00";
 			return;
 		} else {
-			LS.cooldown = Date.now() + 1000 * 10; 
+			LS.cooldown = Date.now() + 1000 * 2; 
 		}
 	}
 	
