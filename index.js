@@ -58,7 +58,7 @@ io.on("connection", socket => {
 				}
 				delete cooldowns[ip];
 			} else {
-				cooldowns[ip] = Date.now() + 1000 * 10;
+				cooldowns[ip] = Date.now() + 1000 * 2;
 			}
 			io.sockets.emit("set", x, y, color);
 			image.set(x, y, color);
